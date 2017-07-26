@@ -21,7 +21,6 @@ class postcodeValidator:
         passedList = []
         for match in re.finditer("([0-9]+\,)"+self.regexSearch, lines.getvalue()):
             passedList.append(match.group(0)+"\n")
-            print "Found Valid Postcode: "+match.group(0)+"\n"
         return passedList
         
     def outputValidity(self,postcode):
@@ -41,7 +40,6 @@ class postcodeValidator:
                 if rowId != "row_id": #Ignore the header row
                     if self.validatePostcode(postcode) == False:
                         outputFunction(rowId+","+postcode+"\n")
-                        print "Found Invalid Postcode: "+postcode+"\n"
 
     
     def sortResults(self,results):
