@@ -4,6 +4,4 @@ import_data.csv
 import_data.csv.gz
 failed_validation.csv
 passed_validation.csv
-test_data.csv.gz
-test_data.csv
 test_output.csv
