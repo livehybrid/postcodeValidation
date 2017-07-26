@@ -8,7 +8,7 @@ inputFile = fileOperations()
 passedFile = fileOperations()
 failedFile = fileOperations()
 
-importFilePath = "import_data.csv.gz"
+importFilePath = "import_data.csv"
 failedOutputFile = "failed_validation.csv"
 passedOutputFile = "passed_validation.csv"
 
