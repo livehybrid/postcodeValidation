@@ -35,6 +35,7 @@ passedListSet = set(passedList)
 
 failedList = [line for line in fullList if line not in passedListSet]
 
+#Sort prior to writing to files
 failedList = validator.sortResults(failedList)
 passedList = validator.sortResults(passedList)
 
