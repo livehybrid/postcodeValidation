@@ -39,8 +39,8 @@ failedList = validator.sortResults(failedList)
 passedList = validator.sortResults(passedList)
 
 print "Writing results to files"
-passedFile.appendLines(["%s" % passedRow  for passedRow in passedList])
-failedFile.appendLines(["%s" % failedRow  for failedRow in failedList])
+passedFile.appendLines(passedList)
+failedFile.appendLines(failedList)
 
 passedFile.closeFile()
 failedFile.closeFile()
