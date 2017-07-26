@@ -43,4 +43,4 @@ class postcodeValidator:
 
     
     def sortResults(self,results):
-        return sorted(results,key=lambda x: int(re.search("\d+",x).group()))
+        return sorted(results,key=lambda x: int(x.split(",")[0]) )
