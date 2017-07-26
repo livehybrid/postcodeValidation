@@ -35,7 +35,7 @@ passedListSet = set(passedList)
 
 failedList = [line for line in fullList if line not in passedListSet]
 
-failedList = validator.sortResults(passedList)
+failedList = validator.sortResults(failedList)
 passedList = validator.sortResults(passedList)
 
 print "Writing results to files"
